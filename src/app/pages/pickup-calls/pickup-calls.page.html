@@ -8,58 +8,12 @@
 </ion-header>
 
 <ion-content>
-  <ion-card>
-    <ion-card-content>
-      <ion-item lines="none">
-        <ion-icon name="hourglass-outline" slot="start" color="warning"></ion-icon>
-        <ion-label>
-          On hold
-          <p>02/04/201 14:33:22</p>
-        </ion-label>
-      </ion-item>
-      <ion-item lines="none">
-        <ion-label>
-          <p>Created at 02/04/201</p>
-          <p>Note: We have two bags tha are full, one with plastic and the other with glasses</p>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-content>
-      <ion-item lines="none">
-        <ion-icon name="archive-outline" slot="start" color="secondary"></ion-icon>
-        <ion-label>
-          Processing
-          <p>02/04/201 18:33:22</p>
-        </ion-label>
-      </ion-item>
-      <ion-item lines="none">
-        <ion-label>
-          <p>Created at 02/04/201</p>
-          <p>Note: We have two bags tha are full, one with plastic and the other with glasses</p>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-content>
-      <ion-item lines="none">
-        <ion-icon name="checkmark-circle-outline" slot="start" color="primary"></ion-icon>
-        <ion-label>
-          Finished
-          <p>01/04/201 14:33:22</p>
-        </ion-label>
-      </ion-item>
-      <ion-item lines="none">
-        <ion-label>
-          <p>Created at 02/04/201</p>
-        </ion-label>
-      </ion-item>
-      <ion-item lines="none">
-        <ion-icon name="trophy" slot="start" color="success"></ion-icon>
-        <ion-label color="success">$15.00</ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
+  <app-pick-up-call status="hold" updateAt="02/04/201 14:33:22" createdAt="01/04/201 14:33:22"
+    notes="We have two bags tha are full, one with plastic and the other with glasses"></app-pick-up-call>
+
+    <app-pick-up-call status="processing" updateAt="24/04/201 14:33:22" createdAt="12/04/201 14:33:22"
+      notes="We have two bags tha are full"></app-pick-up-call>
+
+    <app-pick-up-call status="finished" updateAt="20/04/201 14:33:22" createdAt="11/04/201 14:33:22"
+    value="$19.00"></app-pick-up-call>
 </ion-content>
