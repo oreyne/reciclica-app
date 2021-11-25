@@ -17,7 +17,7 @@ describe('HomePage', () => {
     }).compileComponents();
 
     fixture = TestBed.createComponent(HomePage);
-    router = TestBed.get(router);
+    router = TestBed.get(Router);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

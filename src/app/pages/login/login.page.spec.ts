@@ -3,6 +3,7 @@ import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 import { LoginPage } from './login.page';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 describe('LoginPage', () => {
   let component: LoginPage;
@@ -12,7 +13,7 @@ describe('LoginPage', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ LoginPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot(), AppRoutingModule]
     }).compileComponents();
 
     fixture = TestBed.createComponent(LoginPage);
